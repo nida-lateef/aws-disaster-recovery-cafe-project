@@ -60,9 +60,11 @@ View the full [AWS Disaster Recovery Architecture](architecture/architecture.md)
 
 ## Project Documentation
 
-- [Project Details](project-details.md)
-- [Architecture Documentation](architecture/architecture.md)
-- [Mermaid Diagram Source](architecture/disaster-recovery-architecture.mmd)
+
+## Project Documentation
+
+- [View AWS Architecture Diagram](architecture/architecture.md)
+- [View Project Details](project-details.md)
 
 ## Project Status
 
