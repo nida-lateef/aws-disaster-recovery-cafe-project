@@ -1,33 +1,3 @@
-# AWS Disaster Recovery Architecture
-
-The following diagram illustrates the proposed multi-region Warm Standby architecture for the café business.
-
-```mermaid
-flowchart TB
-    Users["Café staff and customers"]
-    DNS["Amazon Route 53"]
-
-    subgraph Sydney["Primary Region - Sydney"]
-        APP["EC2 / Lambda"]
-        DB["RDS Multi-AZ"]
-        S3["Amazon S3"]
-        CW["CloudWatch"]
-    end
-
-    subgraph Melbourne["Secondary Region - Melbourne"]
-        APP2["Warm Standby EC2 / Lambda"]
-        DB2["RDS Replica / Snapshot"]
-        S32["S3 Cross-Region Replication"]
-    end
-
-    Users --> DNS
-    DNS --> APP
-    APP --> DB
-    APP --> S3
-    S3 -.-> S32
-    DB -.-> DB2
-    CW -.-> DNS
-    DNS -. Failover .-> APP2
 
 # AWS Café Disaster Recovery Architecture
 
@@ -35,24 +5,22 @@ flowchart TB
 
 This project was completed as part of my TAFE NSW Cloud Architecture studies.
 
-The project focuses on designing a proposed AWS disaster recovery solution for a café business that depends on point-of-sale systems, customer records, inventory management and online ordering.
+It focuses on designing a proposed AWS disaster recovery solution for a café business that relies on point-of-sale systems, customer records, inventory management and online ordering.
 
 The objective was to improve business continuity, reduce downtime and protect business data during unexpected disruptions.
 
 ## Proposed Architecture
 
-The solution uses a multi-region Warm Standby approach:
+The solution uses a multi-region Warm Standby approach.
 
 - **Primary Region:** Sydney (ap-southeast-2)
 - **Secondary Region:** Melbourne (ap-southeast-4)
 
-The proposed architecture includes backup, replication, monitoring and failover strategies to support business recovery.
+The proposed architecture includes backup, replication, monitoring and failover strategies.
 
 ## Architecture Diagram
 
-![AWS Disaster Recovery Architecture](architecture/disaster-recovery-architecture.mmd)
-
-For the full architecture documentation, see [Architecture Details](architecture/architecture.md).
+View the full [AWS Disaster Recovery Architecture](architecture/architecture.md).
 
 ## AWS Services Considered
 
@@ -68,7 +36,7 @@ For the full architecture documentation, see [Architecture Details](architecture
 ## Recovery Objectives
 
 | Business System | RTO | RPO |
-|---|---:|---:|
+|---|---|---|
 | Point of Sale | 2 hours | 1 hour |
 | Customer Database | 1 hour | 15 minutes |
 | Inventory Management | 4 hours | 1 hour |
@@ -93,9 +61,9 @@ For the full architecture documentation, see [Architecture Details](architecture
 ## Project Documentation
 
 - [Project Details](project-details.md)
-- [AWS Architecture](architecture/architecture.md)
-- [Mermaid Architecture Source](architecture/disaster-recovery-architecture.mmd)
+- [Architecture Documentation](architecture/architecture.md)
+- [Mermaid Diagram Source](architecture/disaster-recovery-architecture.mmd)
 
 ## Project Status
 
-This is an educational architecture and disaster recovery planning project. The multi-region architecture represents a proposed design and is not a claim of a fully deployed production environment.
+This is an educational architecture and disaster recovery planning project. The multi-region architecture is a proposed design, not a claim of a fully deployed production environment.
