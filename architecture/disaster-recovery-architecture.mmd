@@ -1,0 +1,430 @@
+
+Loading older messages…
+
+Cl_CloudArchitecture_AE_Pro2of3_NidaLateef.docx
+Document
+
+ICTCLD501 -Gelosdisaster recovery plan for Café Business.Template_NidaLateef.docx
+Document
+
+Cl_CloudArchitecture_AE_Sk3of3_NidaLateef.docx
+Document
+
+DisasterRecoveryPlanCafeBusinessPresentation_NidaLateef.pptx
+Presentation
+
+Email 2_NidaLateef.docx
+Document
+
+Email1_NidaLateef.docx
+Document
+
+ICTCLD501 -Gelosdisaster recovery plan for Café Business Version 1_NidaLateef.docx
+Document
+
+ICTCLD501 -Gelosdisaster recovery plan for Café Business Version 2_NidaLateef.docx
+Document
+this is my whole Disaster Recovery project
+
+Worked for 15s
+I've received all your files! ❤️ I've looked through your Disaster Recovery Plan, the TAFE assessment documents, your presentation and the emails you prepared for the client scenario.
+
+This is a substantial project, and I think it's worth adding to your GitHub portfolio. It demonstrates more than just AWS knowledge: it shows cloud architecture planning, risk assessment, security, backup strategies and business continuity.
+
+What your project demonstrates
+🚀 AWS Multi-Region Disaster Recovery Architecture (Production-Grade) - DEV Community
+
+1. Multi-region AWS disaster recovery
+
+Proposed Sydney (ap-southeast-2) as the primary region and Melbourne (ap-southeast-4) as the secondary region, using a Warm Standby architecture.
+
+Diagramming Software | Flowdia Diagrams
+
+2. AWS services and infrastructure
+
+Amazon S3, RDS Multi-AZ, EC2, Lambda, Route 53, CloudWatch, IAM and CloudFormation.
+
+What Is A Hot Warm And Cold Site at Kelley Bishop blog
+
+3. Recovery objectives
+
+You defined RTO and RPO targets for the café's POS, customer database, inventory and online ordering systems.
+
+Cloud Disaster Recovery Strategies: Ensuring Business Continuity and Resilience
+
+4. Security and risk assessment
+
+You considered cyberattacks, regional outages and application failures, with backup, encryption, MFA and monitoring measures.
+
+For example, your recovery requirements specify a one-hour RTO and 15-minute RPO for the customer database. That's a useful design decision to explain in a technical interview.
+
+How I suggest we publish it on GitHub
+I recommend creating a separate repository rather than mixing this with your existing AWS lab.
+
+Repository name
+
+aws-disaster-recovery-cafe-project
+
+Suggested folder structure
+
+aws-disaster-recovery-cafe-project/
+│
+├── README.md
+├── architecture/
+│   └── disaster-recovery-architecture.png
+├── documentation/
+│   └── project-overview.md
+├── recovery-strategy/
+│   └── backup-and-recovery.md
+├── risk-assessment/
+│   └── risk-analysis.md
+└── presentation/
+    └── project-summary.pdf
+Three things I want to be careful about
+TAFE confidentiality and copyright: Your original assessment includes TAFE material, your student ID and the simulated business branding. We should not publish the full assessment templates or private details. We'll create an original portfolio version using your own project work.
+
+Actual implementation versus proposed design: Your disaster recovery plan describes a proposed multi-region architecture. We'll label it as a design project, not claim that you deployed the entire architecture. Your assessment also describes separate practical AWS Academy labs, which we can document as hands-on work where supported by your evidence.
+
+Final version: You uploaded several versions of the recovery plan. We'll use the final June version as the starting point and reconcile the recovery targets and architecture changes before publishing.
+
+What we'll do next
+I suggest we work in this order:
+
+Create a professional project overview and README.
+
+Prepare a clean architecture diagram without TAFE or simulated-company branding.
+
+Prepare supporting technical documentation.
+
+Add the project to GitHub.
+
+Add the GitHub repository to your LinkedIn Featured section.
+
+Add a concise project entry to your IT resume.
+
+Let's make this your first polished cloud architecture portfolio project. It can help demonstrate your technical understanding when applying for Junior Cloud Support, IT Support and Cloud Infrastructure roles.
+
+We can start by creating the GitHub README from your actual project documents.
+
+yes help me step by step
+Absolutely! We'll do it together, one small step at a time. Don't worry if you're not familiar with GitHub. I'll guide you through each click.
+
+Our goal is to turn your TAFE Disaster Recovery assignment into a professional AWS portfolio project that you can share with recruiters.
+
+Step 1 — Create a new GitHub repository
+We'll keep this project separate from your existing AWS lab.
+
+Understanding the Basics of GitHub: An Introduction for Beginners - DEV Community
+
+1. Open GitHub
+
+Go to GitHub and sign in to your account.
+
+Introduction to Versioning & Git – IS310 - Culture As Data Spring 2026
+
+2. Create a repository
+
+Click the + icon in the top-right corner, then select New repository.
+
+3. Enter these details
+
+Field
+
+What to enter
+
+Repository name
+
+aws-disaster-recovery-cafe-project
+
+Description
+
+AWS multi-region disaster recovery architecture design for a café business.
+
+Visibility
+
+Public
+
+Add README
+
+Tick this option
+
+Then click Create repository.
+
+Important Don't upload your original TAFE assessment documents yet. They contain your student ID and assessment material. We'll prepare clean portfolio versions first.
+
+Your first task
+Please create the repository using the details above.
+
+When you've finished, reply "Done" or send me a screenshot of your new repository.
+
+Then we'll move to Step 2: Writing your professional README, using your actual Disaster Recovery project. 😊
+
+done
+Excellent! 😊 We've completed Step 1.
+
+Now let's build the most important part of your GitHub portfolio: the README.md. This is the first thing recruiters and technical people will see when they open your project.
+
+Step 2 — Add your project README
+I've prepared this using your TAFE Disaster Recovery project. It describes the architecture as a proposed design, not a fully deployed AWS environment.
+
+AWS Multi-Region Disaster Recovery Plan – Café Business
+Project Overview
+This project presents a proposed AWS Cloud Disaster Recovery (DR) architecture for a café business that relies on cloud-based systems for point-of-sale (POS), customer records, inventory management and online ordering.
+
+The design uses a Warm Standby disaster recovery strategy across two AWS regions to support business continuity, data protection and recovery during major service disruptions.
+
+Project type: TAFE NSW Cloud Architecture project
+Platform: Amazon Web Services (AWS)
+Architecture: Multi-region Warm Standby
+Primary Region: Sydney – ap-southeast-2
+Secondary Region: Melbourne – ap-southeast-4
+
+Project status: Architecture design and documentation completed as part of TAFE NSW studies. This repository documents the proposed solution; it does not claim that the complete multi-region environment was deployed.
+
+Business Scenario
+The café depends on several technology systems:
+
+Point-of-sale (POS) system
+
+Customer database
+
+Inventory management
+
+Online ordering platform
+
+An outage affecting these systems could interrupt business operations, affect customer experience and result in financial losses.
+
+The project identifies recovery requirements and proposes an AWS architecture to minimise downtime and data loss.
+
+Disaster Recovery Objectives
+The project defines the following Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO):
+
+System	RTO	RPO
+POS System	2 hours	1 hour
+Customer Database	1 hour	15 minutes
+Inventory System	4 hours	1 hour
+Online Ordering System	2 hours	30 minutes
+RTO: Maximum targeted time to restore a system.
+
+RPO: Maximum targeted period of data loss measured in time.
+
+Proposed AWS Architecture
+The design uses Sydney as the primary AWS region and Melbourne as the secondary disaster recovery region.
+
+Primary Region – Sydney
+The primary environment is designed to host the live workloads.
+
+Proposed AWS services:
+
+Amazon EC2 and AWS Lambda – application hosting
+
+Amazon RDS Multi-AZ – database availability
+
+Amazon S3 – storage and backup
+
+Amazon CloudWatch – monitoring and alerts
+
+AWS IAM – identity and access management
+
+AWS CloudTrail – activity logging
+
+Amazon Route 53 – DNS routing and failover
+
+Secondary Region – Melbourne
+The secondary region is designed to maintain a Warm Standby environment.
+
+Proposed components:
+
+Amazon S3 Cross-Region Replication
+
+Amazon RDS read replica or snapshot-based recovery
+
+Preconfigured EC2 and Lambda components
+
+Amazon Route 53 failover routing
+
+AWS CloudFormation templates for infrastructure recovery
+
+Backup and Security Strategy
+The proposed plan includes:
+
+Daily automated cloud backups
+
+Incremental database backups
+
+Cross-region backup replication
+
+90-day backup retention
+
+Long-term archival using Amazon S3 Glacier
+
+Encryption of data in transit and at rest
+
+IAM role-based access controls
+
+Multi-factor authentication (MFA)
+
+Monitoring through Amazon CloudWatch
+
+Risk Assessment
+Three major disaster scenarios were considered:
+
+Cyberattack or malware
+
+AWS regional or data centre outage
+
+Application or software failure
+
+The plan includes recovery procedures for each scenario, including system isolation, database restoration, application recovery, DNS failover and validation.
+
+Disaster Recovery Process
+The proposed recovery workflow is:
+
+Detect and assess the incident.
+
+Identify affected systems and determine the recovery priority.
+
+Activate the disaster recovery environment if required.
+
+Restore or promote database resources.
+
+Redirect traffic to the secondary region.
+
+Validate applications and business operations.
+
+Synchronise data and plan failback when the primary region is restored.
+
+Skills Demonstrated
+AWS cloud architecture planning
+
+Multi-region disaster recovery design
+
+Recovery Time Objective (RTO) and Recovery Point Objective (RPO)
+
+Backup and recovery strategies
+
+AWS storage and database services
+
+Identity and access management concepts
+
+Cloud security and monitoring
+
+Risk assessment and business continuity documentation
+
+Learning Outcomes
+This project helped develop an understanding of how AWS services can be combined to design a resilient cloud environment, protect business-critical information and support recovery from technology disruptions.
+
+Disclaimer
+This is an educational project completed as part of TAFE NSW Cloud Architecture studies. The architecture and recovery procedures represent a proposed design for a simulated café business. Service configurations and recovery performance have not been independently validated through a complete production deployment.
+
+Now add it to GitHub
+Open your new repository.
+
+Click the README.md file.
+
+Click the pencil icon (Edit).
+
+Select the existing text and replace it with the README above.
+
+Click Commit changes.
+
+Use the message: Add project overview and disaster recovery documentation.
+
+When you've done that, tell me "README done".
+
+Next, we'll prepare your AWS architecture diagram and supporting project files. We'll make this portfolio look professional without exposing your TAFE assessment or personal information. ❤️
+
+Readme done
+Fantastic! 🎉 Your GitHub project now has its first important component: a professional README.
+
+Let's move to Step 3 — Create your AWS Disaster Recovery architecture diagram.
+
+This is particularly useful because recruiters can understand your proposed cloud architecture visually.
+
+1. Create a new file in GitHub
+Open your repository:
+
+aws-disaster-recovery-cafe-project
+
+Click Add file.
+
+Select Create new file.
+
+Name the file:
+
+architecture/disaster-recovery-architecture.mmd
+
+This creates an architecture folder automatically.
+
+2. Add this architecture diagram
+Copy the following into the new file:
+
+Secondary Region — Melbourne (ap-southeast-4)
+Primary Region — Sydney (ap-southeast-2)
+Amazon S3Cross-Region Replication
+RDS read replica /snapshot-based recovery
+EC2 / LambdaWarm standby
+AWS CloudFormationInfrastructure templates
+Amazon S3Primary storage
+Amazon RDSMulti-AZ database
+Amazon EC2 / AWS LambdaApplication layer
+Amazon CloudWatchMonitoring and alerts
+AWS IAMAccess management
+AWS CloudTrailActivity logging
+Café staff and customers
+Amazon Route 53DNS and failover
+Detects failures
+Cross-region replication
+Replica / snapshot recovery
+Standby components
+Rebuild infrastructure
+Secures access
+Records activity
+Failover routing
+This represents your proposed design, not a deployed environment.
+
+3. Save the file
+Click Commit changes and use this commit message:
+
+Add AWS multi-region disaster recovery architecture diagram
+
+GitHub can render Mermaid diagrams directly in Markdown files, so we'll also create a small Markdown page to display this diagram neatly.
+
+Step 3 target
+When you've created the .mmd file, reply "Diagram file done".
+
+Then we'll make the diagram visible on your project's main GitHub page and add the supporting recovery documentation. One step at a time! ❤️
+
+
+
+
+⋮⋮⋮⋮
+
+Edit Code
+
+
+Image preview
+Secondary Region — Melbourne (ap-southeast-4)
+Primary Region — Sydney (ap-southeast-2)
+Amazon S3Cross-Region Replication
+RDS read replica /snapshot-based recovery
+EC2 / LambdaWarm standby
+AWS CloudFormationInfrastructure templates
+Amazon S3Primary storage
+Amazon RDSMulti-AZ database
+Amazon EC2 / AWS LambdaApplication layer
+Amazon CloudWatchMonitoring and alerts
+AWS IAMAccess management
+AWS CloudTrailActivity logging
+Café staff and customers
+Amazon Route 53DNS and failover
+Detects failures
+Cross-region replication
+Replica / snapshot recovery
+Standby components
+Rebuild infrastructure
+Secures access
+Records activity
+Failover routing
+
+54%
