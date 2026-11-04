@@ -63,7 +63,7 @@ View the full [AWS Disaster Recovery Architecture](architecture/architecture.md)
 
 ## Project Documentation
 
-- [View AWS Architecture Diagram](architecture/architecture.md)
+![AWS Café Disaster Recovery Architecture](aws-cafe-disaster-recovery-architecture.png)
 - [View Project Details](project-details.md)
 
 ## Project Status
